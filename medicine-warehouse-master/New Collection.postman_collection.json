@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "ab914378-6b63-4395-a8cf-1a34f5834adf",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26520405"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "shadi2",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "0996862713",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shadi2@email.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123321",
+									"type": "text"
+								},
+								{
+									"key": "pharmacy_name",
+									"value": "alataa2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/HP/Documents/IMG-20230910-WA0012.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "shadi2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "phone_number",
+											"value": "0996862713",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "shadi2@email.com",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "123321",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pharmacy_name",
+											"value": "alataa2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 15:44:05 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 15:44:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The name field is required. (and 4 more errors)\",\n    \"errors\": {\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"phone_number\": [\n            \"The phone number field is required.\"\n        ],\n        \"email\": [\n            \"The email field is required.\"\n        ],\n        \"password\": [\n            \"The password field is required.\"\n        ],\n        \"pharmacy_name\": [\n            \"The pharmacy name field is required.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "shadi2",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "0996862713",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "shadi2@email.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123321",
+											"type": "text"
+										},
+										{
+											"key": "pharmacy_name",
+											"value": "alataa2",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/HP/Documents/IMG-20230910-WA0012.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Nov 2023 07:55:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Nov 2023 07:55:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"name\": \"shadi2\",\n            \"email\": \"shadi2@email.com\",\n            \"phone_number\": \"0996862713\",\n            \"pharmacy_name\": \"alataa2\",\n            \"image\": \"1700553305.jpg\",\n            \"updated_at\": \"2023-11-21T07:55:06.000000Z\",\n            \"created_at\": \"2023-11-21T07:55:06.000000Z\",\n            \"id\": 1\n        },\n        \"token\": \"1|88o0ZmHtJsAK54q5J4SDTJdnFgH3NJ8aJ7wyd8tXa94098f4\"\n    },\n    \"message\": \"welcome ,your account has been registered\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "0996862713",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 16:24:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 16:24:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The phone number field is required. (and 1 more error)\",\n    \"errors\": {\n        \"phone_number\": [\n            \"The phone number field is required.\"\n        ],\n        \"password\": [\n            \"The password field is required.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone_number",
+											"value": "0996862713",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 16:29:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Nov 2023 16:29:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"shadi2\",\n            \"phone_number\": \"0996862713\",\n            \"email\": \"shadi2@email.com\",\n            \"pharmacy_name\": \"alataa2\",\n            \"created_at\": \"2023-11-20T16:28:59.000000Z\",\n            \"updated_at\": \"2023-11-20T16:28:59.000000Z\"\n        },\n        \"token\": \"2|bauX3zC8XvJ60t4VPvYbAYZqtMiPM9bWDeQswFIr75437e5a\"\n    },\n    \"message\": \"welcome, logged in successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
